@@ -1,0 +1,16 @@
+
+.isnull : wrap with Object.isNull
+	NON_VOID  →  Objects.isNull($expr$)
+
+.ifisnull : wrap with if Object.isNull
+	NON_VOID  →  if (Objects.isNull($expr$)) {\
+	\
+	}
+
+.nonull : wrap with Object.nonNull
+	NON_VOID  →  Objects.nonNull($expr$)
+
+.ifnonull : wrap with if Object.nonNull
+	NON_VOID  →  if (Objects.nonNull($expr$)) {\
+	\
+	}
