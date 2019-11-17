@@ -1,17 +1,17 @@
 # Java util Objects #
 
-.isnull : wrap with Object.isNull
+.isnull : wrap with Objects.isNull
 	NON_VOID  →  java.util.Objects.isNull($expr$) [USE_STATIC_IMPORTS]
 
-.ifisnull : wrap with Object.isNull
+.ifisnull : wrap with Objects.isNull
 	NON_VOID  →  if (java.util.Objects.isNull($expr$)) {\
 	\
 	} [USE_STATIC_IMPORTS]
 
-.nonull : wrap with Object.nonNull
+.nonull : wrap with Objects.nonNull
 	NON_VOID  →  java.util.Objects.nonNull($expr$) [USE_STATIC_IMPORTS]
 
-.ifnonull : wrap with Object.nonNull
+.ifnonull : wrap with Objects.nonNull
 	NON_VOID  →  if (java.util.Objects.nonNull($expr$)) {\
 	\
 	} [USE_STATIC_IMPORTS]
